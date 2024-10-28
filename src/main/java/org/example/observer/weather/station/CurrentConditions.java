@@ -2,12 +2,13 @@ package org.example.observer.weather.station;
 
 public class CurrentConditions implements Observer {
 
-  private State WeatherData;
+  private final State WeatherData;
 
-  public CurrentConditions(State weatherData){
+  public CurrentConditions(State weatherData) {
     this.WeatherData = weatherData;
     weatherData.register(this);
   }
+
   @Override
   public void update(int temperature, int pressure, int humidity) {
     System.out.println("inside current conditions");
