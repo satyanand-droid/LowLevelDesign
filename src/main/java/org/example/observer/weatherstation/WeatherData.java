@@ -1,4 +1,4 @@
-package org.example.observer.weather.station;
+package org.example.observer.weatherstation;
 
 import java.util.ArrayList;
 import java.util.List;

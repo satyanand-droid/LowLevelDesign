@@ -1,4 +1,4 @@
-package org.example.observer.weather.station;
+package org.example.observer.weatherstation;
 
 public interface State {
   public void register(Observer o);

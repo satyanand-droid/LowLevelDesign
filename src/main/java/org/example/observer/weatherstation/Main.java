@@ -1,4 +1,4 @@
-package org.example.observer.weather.station;
+package org.example.observer.weatherstation;
 
 public class Main {
   public static void main(String[] args) {
