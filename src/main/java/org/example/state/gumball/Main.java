@@ -3,12 +3,6 @@ package org.example.state.gumball;
 public class Main {
   public static void main(String[] args) {
     GumballMachine gumballMachine = new GumballMachine(5);
-    gumballMachine.turnCrank();
-    gumballMachine.ejectCoin();
-    gumballMachine.insertCoin();
-    gumballMachine.turnCrank();
-    gumballMachine.turnCrank();
-    gumballMachine.insertCoin();
     gumballMachine.insertCoin();
     gumballMachine.turnCrank();
 
@@ -18,7 +12,7 @@ public class Main {
     gumballMachine.insertCoin();
     gumballMachine.turnCrank();
 
-    gumballMachine.insertCoin();
+    // customer tries to cheat
     gumballMachine.turnCrank();
 
     gumballMachine.insertCoin();
@@ -26,5 +20,8 @@ public class Main {
 
     gumballMachine.insertCoin();
     gumballMachine.turnCrank();
+
+    // all gumballs are dispensed
+    gumballMachine.insertCoin();
   }
 }
